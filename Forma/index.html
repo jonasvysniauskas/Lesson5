@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Payment form example</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <form action="https://formspree.io/sandra.saukaite@shopify.com" method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+  <h1 align="left">Payment Form</h1>
+  <p>Required fields are followed by "*"</p>
+  <h2>Contact information</h2>
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="gender" value="male" checked> Miss<br>
+    <input type="radio" name="gender" value="female"> Mister<br>
+  </fieldset>
+<br>
+    <div>
+      <label for="username">Name: <abbr title="required">*</abbr></label>
+      <input id="username" type="text" name="username">
+    </div>
+    <div>
+      <label for="mail">E-mail: <abbr title="required">*</abbr></label>
+      <input id="mail" type="text" name="email">
+    </div>
+    <div>
+      <label for="mail">Password <abbr title="required">*</abbr></label>
+      <input type="password" name="pwd">
+  </div>
+  <h2>Payment information</h2>
+  <label for="mail">Card type: <abbr title="required">*</abbr></label>
+    <select name="visa card">
+      <option value="volvo">Visa</option>
+      <option value="saab">Mastercard</option>
+    </select>
+    <br>
+    <br>
+    <div>
+    <label for="numbers">Card number: <abbr title="required">*</abbr></label>
+    <input id="numbers" type="text" name="email">
+  </div>
+  <div>
+  <label for="numbers">Expiration date: <i>formatted as mm/yy</i> <abbr title="required">*</abbr></label>
+  <input id="numbers" type="text" name="email">
+</div>
+  <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
